@@ -5,10 +5,10 @@ import Dishdetail from './DishdetailComponent';
 import { Card, CardImg, CardImgOverlay, CardText, CardBody,
     CardTitle } from 'reactstrap';
 
-    function RenderMenuItem({ dish, onClick }){
+    function RenderMenuItem({ dish}){
 
         return(
-            <Card onClick={() => onClick(dish.id)}> 
+            <Card > 
                   <CardImg width="100%" src={dish.image} alt={dish.name} />
                   <CardImgOverlay>
                       <CardTitle>{dish.name}</CardTitle>
